@@ -3,7 +3,7 @@ const { Client } = require('pg')
 const { route, server } = require('../src/app')
 
 test('GET / returns the app name', () => {
-  expect(route('GET', '/')).toMatchObject({ status: 200, body: 'KT3 App' })
+  expect(route('GET', '/')).toMatchObject({ status: 200, body: 'KT4 App' })
 })
 
 test('GET /health returns status ok as JSON', async () => {
